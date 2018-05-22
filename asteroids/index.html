@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
     <canvas id="game-canvas" width="900" height="999"></canvas>
+    <script>
+      const canvasEl = document.getElementById("game-canvas");
+      canvasEl.width = 999;
+      canvasEl.height = 999;
+
+      const ctx = canvasEl.getContext("2d");
+      ctx.fillStyle = "grey";
+      ctx.fillRect(0, 0, 999, 999);
+    </script>
+    
     <script type="text/javascript" src="lib/bundle.js">
     
     </script>
